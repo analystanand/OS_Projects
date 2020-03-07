@@ -1,0 +1,361 @@
+Ctrl+a h for help
+qemu-system-i386 -serial mon:stdio -hdb fs.img xv6.img -smp 1
+xv6...
+cpu0: starting
+init: starting sh
+$ switch_tickets
+set low tickets for process A with pid: 4
+set high tickets for process B with pid: 5
+B completed first round of spinning...
+***********getpinfo results************
+pid: 1 tickets: 1 ticks: 1 i: 0
+pid: 2 tickets: 1 ticks: 1 i: 1
+pid: 3 tickets: 100000000 ticks: 1 i: 2
+pid: 4 tickets: 1 ticks: 2 i: 3
+pid: 5 tickets: 1000 ticks: 71 i: 4
+set low tickets for process B
+A completed first round of spinning..
+set high tickets for process A
+Passed 1/2 tests. Switching tickets...
+A completed spinning
+Checking for correct values...
+***********getpinfo results************
+pid: 1 tickets: 1 ticks: 1 i: 0
+pid: 2 tickets: 1 ticks: 1 i: 1
+pid: 3 tickets: 100000000 ticks: 1 i: 2
+pid: 4 tickets: 1000 ticks: 146 i: 3
+pid: 5 tickets: 1 ticks: 72 i: 4
+B completed spinning 
+Should print 1 then 2
+$ t stress_manylow
+Goal: Achieve <7% error in tick difference between a single high ticket process and many low ticket processes
+
+ ****PInfo before**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 1
+pid: 6 tickets: 16114 ticks: 11
+pid: 7 tickets: 5371 ticks: 147
+pid: 8 tickets: 5371 ticks: 146
+pid: 9 tickets: 5371 ticks: 1
+pid: 10 tickets: 5371 ticks: 1
+pid: 11 tickets: 5371 ticks: 1
+pid: 12 tickets: 5371 ticks: 1
+pid: 13 tickets: 5371 ticks: 1
+pid: 14 tickets: 5371 ticks: 1
+pid: 15 tickets: 5371 ticks: 1
+pid: 16 tickets: 5371 ticks: 1
+pid: 17 tickets: 5371 ticks: 1
+pid: 18 tickets: 5371 ticks: 1
+pid: 19 tickets: 5371 ticks: 1
+pid: 20 tickets: 322260 ticks: 1
+pid: 21 tickets: 5371 ticks: 1
+pid: 22 tickets: 5371 ticks: 1
+pid: 23 tickets: 5371 ticks: 1
+pid: 24 tickets: 5371 ticks: 1
+pid: 25 tickets: 5371 ticks: 1
+pid: 26 tickets: 5371 ticks: 1
+pid: 27 tickets: 5371 ticks: 1
+pid: 28 tickets: 5371 ticks: 1
+pid: 29 tickets: 5371 ticks: 1
+pid: 30 tickets: 5371 ticks: 1
+pid: 31 tickets: 5371 ticks: 1
+pid: 32 tickets: 5371 ticks: 1
+pid: 33 tickets: 5371 ticks: 1
+pid: 34 tickets: 5371 ticks: 1
+pid: 35 tickets: 5371 ticks: 1
+pid: 36 tickets: 5371 ticks: 1
+pid: 37 tickets: 5371 ticks: 1
+pid: 38 tickets: 5371 ticks: 1
+pid: 39 tickets: 5371 ticks: 1
+pid: 40 tickets: 5371 ticks: 1
+pid: 41 tickets: 5371 ticks: 1
+pid: 42 tickets: 5371 ticks: 1
+pid: 43 tickets: 5371 ticks: 1
+pid: 44 tickets: 5371 ticks: 1
+pid: 45 tickets: 5371 ticks: 1
+pid: 46 tickets: 5371 ticks: 1
+pid: 47 tickets: 5371 ticks: 1
+pid: 48 tickets: 5371 ticks: 1
+pid: 49 tickets: 5371 ticks: 1
+pid: 50 tickets: 5371 ticks: 1
+pid: 51 tickets: 5371 ticks: 1
+pid: 52 tickets: 5371 ticks: 1
+pid: 53 tickets: 5371 ticks: 1
+pid: 54 tickets: 5371 ticks: 1
+pid: 55 tickets: 5371 ticks: 1
+pid: 56 tickets: 5371 ticks: 1
+pid: 57 tickets: 5371 ticks: 1
+pid: 58 tickets: 5371 ticks: 1
+pid: 59 tickets: 5371 ticks: 1
+pid: 60 tickets: 5371 ticks: 1
+pid: 61 tickets: 5371 ticks: 1
+pid: 62 tickets: 5371 ticks: 1
+pid: 63 tickets: 5371 ticks: 1
+pid: 64 tickets: 5371 ticks: 1
+pid: 65 tickets: 5371 ticks: 1
+pid: 66 tickets: 5371 ticks: 1
+pid: 67 tickets: 5371 ticks: 1
+Spinning...
+
+ ****PInfo after**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 1
+pid: 6 tickets: 16114 ticks: 49
+pid: 7 tickets: 5371 ticks: 155
+pid: 8 tickets: 5371 ticks: 153
+pid: 9 tickets: 5371 ticks: 13
+pid: 10 tickets: 5371 ticks: 12
+pid: 11 tickets: 5371 ticks: 5
+pid: 12 tickets: 5371 ticks: 10
+pid: 13 tickets: 5371 ticks: 9
+pid: 14 tickets: 5371 ticks: 13
+pid: 15 tickets: 5371 ticks: 6
+pid: 16 tickets: 5371 ticks: 13
+pid: 17 tickets: 5371 ticks: 10
+pid: 18 tickets: 5371 ticks: 13
+pid: 19 tickets: 5371 ticks: 10
+pid: 20 tickets: 322260 ticks: 609
+pid: 21 tickets: 5371 ticks: 10
+pid: 22 tickets: 5371 ticks: 10
+pid: 23 tickets: 5371 ticks: 12
+pid: 24 tickets: 5371 ticks: 10
+pid: 25 tickets: 5371 ticks: 13
+pid: 26 tickets: 5371 ticks: 14
+pid: 27 tickets: 5371 ticks: 6
+pid: 28 tickets: 5371 ticks: 10
+pid: 29 tickets: 5371 ticks: 10
+pid: 30 tickets: 5371 ticks: 15
+pid: 31 tickets: 5371 ticks: 12
+pid: 32 tickets: 5371 ticks: 8
+pid: 33 tickets: 5371 ticks: 12
+pid: 34 tickets: 5371 ticks: 9
+pid: 35 tickets: 5371 ticks: 11
+pid: 36 tickets: 5371 ticks: 12
+pid: 37 tickets: 5371 ticks: 9
+pid: 38 tickets: 5371 ticks: 11
+pid: 39 tickets: 5371 ticks: 13
+pid: 40 tickets: 5371 ticks: 10
+pid: 41 tickets: 5371 ticks: 20
+pid: 42 tickets: 5371 ticks: 16
+pid: 43 tickets: 5371 ticks: 18
+pid: 44 tickets: 5371 ticks: 13
+pid: 45 tickets: 5371 ticks: 17
+pid: 46 tickets: 5371 ticks: 15
+pid: 47 tickets: 5371 ticks: 9
+pid: 48 tickets: 5371 ticks: 17
+pid: 49 tickets: 5371 ticks: 16
+pid: 50 tickets: 5371 ticks: 11
+pid: 51 tickets: 5371 ticks: 14
+pid: 52 tickets: 5371 ticks: 6
+pid: 53 tickets: 5371 ticks: 17
+pid: 54 tickets: 5371 ticks: 10
+pid: 55 tickets: 5371 ticks: 12
+pid: 56 tickets: 5371 ticks: 14
+pid: 57 tickets: 5371 ticks: 15
+pid: 58 tickets: 5371 ticks: 9
+pid: 59 tickets: 5371 ticks: 13
+pid: 60 tickets: 5371 ticks: 15
+pid: 61 tickets: 5371 ticks: 5
+pid: 62 tickets: 5371 ticks: 10
+pid: 63 tickets: 5371 ticks: 7
+pid: 64 tickets: 5371 ticks: 11
+pid: 65 tickets: 5371 ticks: 12
+pid: 66 tickets: 5371 ticks: 12
+pid: 67 tickets: 5371 ticks: 13
+Percent error: 2%
+Should print 1 then 2$ settikce   cket
+Should print 1 then 2$ processesinuse
+Spinning...
+
+**** PInfo ****
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 1
+pid: 69 tickets: 1 ticks: 65
+pid: 70 tickets: 1 ticks: 230
+pid: 71 tickets: 1 ticks: 226
+pid: 72 tickets: 1 ticks: 75
+pid: 73 tickets: 1 ticks: 79
+pid: 74 tickets: 1 ticks: 86
+pid: 75 tickets: 1 ticks: 94
+pid: 76 tickets: 1 ticks: 67
+Number of processes in use 10
+Should print 1 then 2$ high_tickets
+
+ ****PInfo before**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 2
+pid: 77 tickets: 5 ticks: 73
+pid: 78 tickets: 100000 ticks: 232
+Spinning...
+
+ ****PInfo after**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 2
+pid: 77 tickets: 5 ticks: 73
+pid: 78 tickets: 100000 ticks: 378
+high: 232 378, low: 73 73
+Should print 1 then 2$ high_sleep
+
+ ****PInfo before**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 2
+pid: 79 tickets: 10000 ticks: 215
+pid: 80 tickets: 5 ticks: 380
+Spinning...
+
+ ****PInfo after**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 2
+pid: 79 tickets: 10000 ticks: 215
+pid: 80 tickets: 5 ticks: 456
+high: 215 215, low: 380 456
+Should print 1 then 2$ getpinfo
+Should print 1 then 2$ forktickets
+parent: 5, child: 5
+Should print 1 then 2$ defaulr t_tickets
+
+ **** PInfo **** 
+pid: 84 tickets: 1 ticks: 217
+Should print 1 then 2$ random
+Goal: To have a random, not simply uniform, scheduler
+(Pid difference variance > 150, Direction change > 15%)
+
+Spinning...
+Variance: 364
+Direction change percentage: 68%
+Should print 1 then 2$ stress_equal
+Goal: Achieve variance of <55 in ticks for many processes with the same number of tickets
+
+ ****PInfo before**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 4
+pid: 132 tickets: 16114 ticks: 241
+pid: 133 tickets: 5371 ticks: 463
+pid: 134 tickets: 5371 ticks: 234
+pid: 135 tickets: 5371 ticks: 82
+pid: 136 tickets: 5371 ticks: 92
+pid: 137 tickets: 5371 ticks: 91
+pid: 138 tickets: 5371 ticks: 100
+pid: 139 tickets: 5371 ticks: 74
+pid: 140 tickets: 5371 ticks: 16
+pid: 141 tickets: 5371 ticks: 13
+pid: 142 tickets: 5371 ticks: 17
+pid: 143 tickets: 5371 ticks: 21
+pid: 144 tickets: 5371 ticks: 19
+pid: 145 tickets: 5371 ticks: 17
+pid: 146 tickets: 5371 ticks: 616
+pid: 147 tickets: 5371 ticks: 19
+pid: 148 tickets: 5371 ticks: 15
+pid: 149 tickets: 5371 ticks: 19
+pid: 150 tickets: 5371 ticks: 14
+pid: 151 tickets: 5371 ticks: 19
+pid: 152 tickets: 5371 ticks: 16
+pid: 153 tickets: 5371 ticks: 16
+pid: 154 tickets: 5371 ticks: 19
+pid: 155 tickets: 5371 ticks: 19
+pid: 156 tickets: 5371 ticks: 19
+pid: 157 tickets: 5371 ticks: 17
+pid: 158 tickets: 5371 ticks: 12
+pid: 159 tickets: 5371 ticks: 19
+pid: 160 tickets: 5371 ticks: 18
+pid: 161 tickets: 5371 ticks: 18
+pid: 162 tickets: 5371 ticks: 19
+pid: 163 tickets: 5371 ticks: 12
+pid: 164 tickets: 5371 ticks: 17
+pid: 165 tickets: 5371 ticks: 19
+pid: 166 tickets: 5371 ticks: 14
+pid: 167 tickets: 5371 ticks: 23
+pid: 168 tickets: 5371 ticks: 21
+pid: 169 tickets: 5371 ticks: 23
+pid: 170 tickets: 5371 ticks: 18
+pid: 171 tickets: 5371 ticks: 20
+pid: 172 tickets: 5371 ticks: 20
+pid: 173 tickets: 5371 ticks: 12
+pid: 174 tickets: 5371 ticks: 18
+pid: 175 tickets: 5371 ticks: 17
+pid: 176 tickets: 5371 ticks: 13
+pid: 177 tickets: 5371 ticks: 15
+pid: 178 tickets: 5371 ticks: 7
+pid: 179 tickets: 5371 ticks: 18
+pid: 180 tickets: 5371 ticks: 11
+pid: 181 tickets: 5371 ticks: 15
+pid: 182 tickets: 5371 ticks: 17
+pid: 183 tickets: 5371 ticks: 17
+pid: 184 tickets: 5371 ticks: 13
+pid: 185 tickets: 5371 ticks: 13
+pid: 186 tickets: 5371 ticks: 16
+pid: 187 tickets: 5371 ticks: 7
+pid: 188 tickets: 5371 ticks: 11
+pid: 189 tickets: 5371 ticks: 10
+pid: 190 tickets: 5371 ticks: 11
+pid: 191 tickets: 5371 ticks: 12
+pid: 192 tickets: 5371 ticks: 12
+pid: 193 tickets: 5371 ticks: 13
+Spinning...
+ ****PInfo after**** 
+pid: 1 tickets: 1 ticks: 1
+pid: 2 tickets: 1 ticks: 4
+pid: 132 tickets: 16114 ticks: 280
+pid: 133 tickets: 5371 ticks: 488
+pid: 134 tickets: 5371 ticks: 251
+pid: 135 tickets: 5371 ticks: 98
+pid: 136 tickets: 5371 ticks: 111
+pid: 137 tickets: 5371 ticks: 112
+pid: 138 tickets: 5371 ticks: 120
+pid: 139 tickets: 5371 ticks: 99
+pid: 140 tickets: 5371 ticks: 28
+pid: 141 tickets: 5371 ticks: 36
+pid: 142 tickets: 5371 ticks: 37
+pid: 143 tickets: 5371 ticks: 42
+pid: 144 tickets: 5371 ticks: 42
+pid: 145 tickets: 5371 ticks: 33
+pid: 146 tickets: 5371 ticks: 633
+pid: 147 tickets: 5371 ticks: 32
+pid: 148 tickets: 5371 ticks: 34
+pid: 149 tickets: 5371 ticks: 29
+pid: 150 tickets: 5371 ticks: 34
+pid: 151 tickets: 5371 ticks: 40
+pid: 152 tickets: 5371 ticks: 35
+pid: 153 tickets: 5371 ticks: 28
+pid: 154 tickets: 5371 ticks: 32
+pid: 155 tickets: 5371 ticks: 34
+pid: 156 tickets: 5371 ticks: 37
+pid: 157 tickets: 5371 ticks: 33
+pid: 158 tickets: 5371 ticks: 32
+pid: 159 tickets: 5371 ticks: 33
+pid: 160 tickets: 5371 ticks: 35
+pid: 161 tickets: 5371 ticks: 37
+pid: 162 tickets: 5371 ticks: 36
+pid: 163 tickets: 5371 ticks: 27
+pid: 164 tickets: 5371 ticks: 34
+pid: 165 tickets: 5371 ticks: 38
+pid: 166 tickets: 5371 ticks: 31
+pid: 167 tickets: 5371 ticks: 45
+pid: 168 tickets: 5371 ticks: 42
+pid: 169 tickets: 5371 ticks: 47
+pid: 170 tickets: 5371 ticks: 34
+pid: 171 tickets: 5371 ticks: 41
+pid: 172 tickets: 5371 ticks: 35
+pid: 173 tickets: 5371 ticks: 27
+pid: 174 tickets: 5371 ticks: 44
+pid: 175 tickets: 5371 ticks: 36
+pid: 176 tickets: 5371 ticks: 27
+pid: 177 tickets: 5371 ticks: 28
+pid: 178 tickets: 5371 ticks: 27
+pid: 179 tickets: 5371 ticks: 37
+pid: 180 tickets: 5371 ticks: 27
+pid: 181 tickets: 5371 ticks: 36
+pid: 182 tickets: 5371 ticks: 45
+pid: 183 tickets: 5371 ticks: 37
+pid: 184 tickets: 5371 ticks: 24
+pid: 185 tickets: 5371 ticks: 32
+pid: 186 tickets: 5371 ticks: 34
+pid: 187 tickets: 5371 ticks: 23
+pid: 188 tickets: 5371 ticks: 29
+pid: 189 tickets: 5371 ticks: 37
+pid: 190 tickets: 5371 ticks: 34
+pid: 191 tickets: 5371 ticks: 29
+pid: 192 tickets: 5371 ticks: 31
+pid: 193 tickets: 5371 ticks: 26
+Variance check passed. Within limits. 
+Should print 1 then 2$ 

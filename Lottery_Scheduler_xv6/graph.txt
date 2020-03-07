@@ -1,0 +1,1532 @@
+gcc  -iquote include -Wall -Werror -ggdb  \
+  -M -MG tools/mkfs.c -MF tools/mkfs.d -MT tools/mkfs.d -MT tools/mkfs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/umalloc.c -MF user/umalloc.d -MT user/umalloc.d -MT user/umalloc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/printf.c -MF user/printf.d -MT user/printf.d -MT user/printf.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/usys.S -MF user/usys.d -MT user/usys.d -MT user/usys.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/ulib.c -MF user/ulib.d -MT user/ulib.d -MT user/ulib.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/zombie.c -MF user/zombie.d -MT user/zombie.d -MT user/zombie.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/graph.c -MF user/graph.d -MT user/graph.d -MT user/graph.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/stress_equal.c -MF user/stress_equal.d -MT user/stress_equal.d -MT user/stress_equal.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/random.c -MF user/random.d -MT user/random.d -MT user/random.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/default_tickets.c -MF user/default_tickets.d -MT user/default_tickets.d -MT user/default_tickets.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/forktickets.c -MF user/forktickets.d -MT user/forktickets.d -MT user/forktickets.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/getpinfo.c -MF user/getpinfo.d -MT user/getpinfo.d -MT user/getpinfo.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/high_sleep.c -MF user/high_sleep.d -MT user/high_sleep.d -MT user/high_sleep.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/high_tickets.c -MF user/high_tickets.d -MT user/high_tickets.d -MT user/high_tickets.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/processesinuse.c -MF user/processesinuse.d -MT user/processesinuse.d -MT user/processesinuse.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/setticket.c -MF user/setticket.d -MT user/setticket.d -MT user/setticket.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/stress_manylow.c -MF user/stress_manylow.d -MT user/stress_manylow.d -MT user/stress_manylow.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/switch_tickets.c -MF user/switch_tickets.d -MT user/switch_tickets.d -MT user/switch_tickets.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/wc.c -MF user/wc.d -MT user/wc.d -MT user/wc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/usertests.c -MF user/usertests.d -MT user/usertests.d -MT user/usertests.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/stressfs.c -MF user/stressfs.d -MT user/stressfs.d -MT user/stressfs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/sh.c -MF user/sh.d -MT user/sh.d -MT user/sh.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/rm.c -MF user/rm.d -MT user/rm.d -MT user/rm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/mkdir.c -MF user/mkdir.d -MT user/mkdir.d -MT user/mkdir.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/ls.c -MF user/ls.d -MT user/ls.d -MT user/ls.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/ln.c -MF user/ln.d -MT user/ln.d -MT user/ln.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/kill.c -MF user/kill.d -MT user/kill.d -MT user/kill.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/init.c -MF user/init.d -MT user/init.d -MT user/init.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/grep.c -MF user/grep.d -MT user/grep.d -MT user/grep.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/forktest.c -MF user/forktest.d -MT user/forktest.d -MT user/forktest.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/echo.c -MF user/echo.d -MT user/echo.d -MT user/echo.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG user/cat.c -MF user/cat.d -MT user/cat.d -MT user/cat.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/initcode.S -MF kernel/initcode.d -MT kernel/initcode.d -MT kernel/initcode.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/bootother.S -MF kernel/bootother.d -MT kernel/bootother.d -MT kernel/bootother.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/data.S -MF kernel/data.d -MT kernel/data.d -MT kernel/data.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/multiboot.S -MF kernel/multiboot.d -MT kernel/multiboot.d -MT kernel/multiboot.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/bootasm.S -MF kernel/bootasm.d -MT kernel/bootasm.d -MT kernel/bootasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/bootmain.c -MF kernel/bootmain.d -MT kernel/bootmain.d -MT kernel/bootmain.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/vm.c -MF kernel/vm.d -MT kernel/vm.d -MT kernel/vm.o
+perl kernel/vectors.pl > kernel/vectors.S
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/vectors.S -MF kernel/vectors.d -MT kernel/vectors.d -MT kernel/vectors.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/uart.c -MF kernel/uart.d -MT kernel/uart.d -MT kernel/uart.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/trap.c -MF kernel/trap.d -MT kernel/trap.d -MT kernel/trap.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/trapasm.S -MF kernel/trapasm.d -MT kernel/trapasm.d -MT kernel/trapasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/timer.c -MF kernel/timer.d -MT kernel/timer.d -MT kernel/timer.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/sysproc.c -MF kernel/sysproc.d -MT kernel/sysproc.d -MT kernel/sysproc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/sysfile.c -MF kernel/sysfile.d -MT kernel/sysfile.d -MT kernel/sysfile.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/syscall.c -MF kernel/syscall.d -MT kernel/syscall.d -MT kernel/syscall.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/swtch.S -MF kernel/swtch.d -MT kernel/swtch.d -MT kernel/swtch.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/string.c -MF kernel/string.d -MT kernel/string.d -MT kernel/string.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/spinlock.c -MF kernel/spinlock.d -MT kernel/spinlock.d -MT kernel/spinlock.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/proc.c -MF kernel/proc.d -MT kernel/proc.d -MT kernel/proc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/pipe.c -MF kernel/pipe.d -MT kernel/pipe.d -MT kernel/pipe.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/picirq.c -MF kernel/picirq.d -MT kernel/picirq.d -MT kernel/picirq.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/mp.c -MF kernel/mp.d -MT kernel/mp.d -MT kernel/mp.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/main.c -MF kernel/main.d -MT kernel/main.d -MT kernel/main.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/lapic.c -MF kernel/lapic.d -MT kernel/lapic.d -MT kernel/lapic.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/kbd.c -MF kernel/kbd.d -MT kernel/kbd.d -MT kernel/kbd.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/kalloc.c -MF kernel/kalloc.d -MT kernel/kalloc.d -MT kernel/kalloc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/ioapic.c -MF kernel/ioapic.d -MT kernel/ioapic.d -MT kernel/ioapic.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/ide.c -MF kernel/ide.d -MT kernel/ide.d -MT kernel/ide.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/fs.c -MF kernel/fs.d -MT kernel/fs.d -MT kernel/fs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/file.c -MF kernel/file.d -MT kernel/file.d -MT kernel/file.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/exec.c -MF kernel/exec.d -MT kernel/exec.d -MT kernel/exec.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/console.c -MF kernel/console.d -MT kernel/console.d -MT kernel/console.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	-M -MG kernel/bio.c -MF kernel/bio.d -MT kernel/bio.d -MT kernel/bio.o
+gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
+gcc  tools/mkfs.o -o tools/mkfs
+mkdir -p fs
+cp README fs/README
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/cat.o user/cat.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ulib.o user/ulib.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c user/usys.S -o user/usys.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/printf.o user/printf.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/umalloc.o user/umalloc.c
+mkdir -p user/bin
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/cat user/cat.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/cat fs/cat
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/echo.o user/echo.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/echo user/echo.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/echo fs/echo
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/forktest.o user/forktest.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/forktest user/forktest.o user/ulib.o user/usys.o
+cp user/bin/forktest fs/forktest
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/grep.o user/grep.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/grep user/grep.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/grep fs/grep
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/init.o user/init.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/init user/init.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/init fs/init
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/kill.o user/kill.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/kill user/kill.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/kill fs/kill
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ln.o user/ln.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ln user/ln.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/ln fs/ln
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ls.o user/ls.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ls user/ls.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/ls fs/ls
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/mkdir.o user/mkdir.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/mkdir user/mkdir.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/mkdir fs/mkdir
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/rm.o user/rm.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/rm user/rm.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/rm fs/rm
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/sh.o user/sh.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/sh user/sh.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/sh fs/sh
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/stressfs.o user/stressfs.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/stressfs user/stressfs.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/stressfs fs/stressfs
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/usertests.o user/usertests.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/usertests user/usertests.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/usertests fs/usertests
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/wc.o user/wc.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/wc user/wc.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/wc fs/wc
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/switch_tickets.o user/switch_tickets.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/switch_tickets user/switch_tickets.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/switch_tickets fs/switch_tickets
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/stress_manylow.o user/stress_manylow.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/stress_manylow user/stress_manylow.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/stress_manylow fs/stress_manylow
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/setticket.o user/setticket.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/setticket user/setticket.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/setticket fs/setticket
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/processesinuse.o user/processesinuse.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/processesinuse user/processesinuse.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/processesinuse fs/processesinuse
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/high_tickets.o user/high_tickets.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/high_tickets user/high_tickets.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/high_tickets fs/high_tickets
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/high_sleep.o user/high_sleep.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/high_sleep user/high_sleep.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/high_sleep fs/high_sleep
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/getpinfo.o user/getpinfo.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/getpinfo user/getpinfo.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/getpinfo fs/getpinfo
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/forktickets.o user/forktickets.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/forktickets user/forktickets.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/forktickets fs/forktickets
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/default_tickets.o user/default_tickets.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/default_tickets user/default_tickets.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/default_tickets fs/default_tickets
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/random.o user/random.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/random user/random.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/random fs/random
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/stress_equal.o user/stress_equal.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/stress_equal user/stress_equal.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/stress_equal fs/stress_equal
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/graph.o user/graph.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/graph user/graph.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/graph fs/graph
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/zombie.o user/zombie.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/zombie user/zombie.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/zombie fs/zombie
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+forktest
+usertests
+getpinfo
+ls
+stress_manylow
+high_tickets
+mkdir
+wc
+init
+zombie
+stressfs
+random
+echo
+ln
+rm
+README
+tester
+sh
+cat
+grep
+setticket
+kill
+forktickets
+switch_tickets
+processesinuse
+stress_equal
+high_sleep
+graph
+default_tickets
+balloc: first 695 blocks have been allocated
+balloc: write bitmap block at sector 28
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootasm.S -o kernel/bootasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+	 -Os -c -o kernel/bootmain.o kernel/bootmain.c
+ld  -m    elf_i386 -nostdlib --omagic \
+	--entry=start --section-start=.text=0x7C00 \
+	--output=kernel/bootblock.out kernel/bootasm.o kernel/bootmain.o
+objcopy -S -O binary -j .text kernel/bootblock.out kernel/bootblock
+./kernel/sign.pl kernel/bootblock
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/bio.o kernel/bio.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/console.o kernel/console.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/exec.o kernel/exec.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/file.o kernel/file.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/fs.o kernel/fs.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ide.o kernel/ide.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ioapic.o kernel/ioapic.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kalloc.o kernel/kalloc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kbd.o kernel/kbd.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/lapic.o kernel/lapic.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/main.o kernel/main.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/mp.o kernel/mp.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/picirq.o kernel/picirq.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/pipe.o kernel/pipe.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/proc.o kernel/proc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/spinlock.o kernel/spinlock.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/string.o kernel/string.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/swtch.S -o kernel/swtch.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/syscall.o kernel/syscall.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysfile.o kernel/sysfile.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysproc.o kernel/sysproc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/timer.o kernel/timer.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/trapasm.S -o kernel/trapasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/trap.o kernel/trap.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/uart.o kernel/uart.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/vectors.S -o kernel/vectors.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/vm.o kernel/vm.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/multiboot.S -o kernel/multiboot.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/data.S -o kernel/data.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootother.S -o kernel/bootother.o
+ld  -m    elf_i386 -nostdlib --omagic \
+	--entry=start --section-start=.text=0x7000 \
+	--output=kernel/bootother.out kernel/bootother.o
+objcopy -S -O binary kernel/bootother.out bootother
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/initcode.S -o kernel/initcode.o
+ld  -m    elf_i386 -nostdlib --omagic \
+	--entry=start --section-start=.text=0x0 \
+	--output=kernel/initcode.out kernel/initcode.o
+objcopy -S -O binary kernel/initcode.out initcode
+ld  -m    elf_i386 -nostdlib --omagic \
+	--section-start=.text=0x100000 --entry=main --output=kernel/kernel \
+	kernel/multiboot.o kernel/data.o kernel/bio.o kernel/console.o kernel/exec.o kernel/file.o kernel/fs.o kernel/ide.o kernel/ioapic.o kernel/kalloc.o kernel/kbd.o kernel/lapic.o kernel/main.o kernel/mp.o kernel/picirq.o kernel/pipe.o kernel/proc.o kernel/spinlock.o kernel/string.o kernel/swtch.o kernel/syscall.o kernel/sysfile.o kernel/sysproc.o kernel/timer.o kernel/trapasm.o kernel/trap.o kernel/uart.o kernel/vectors.o kernel/vm.o \
+	-b binary initcode bootother
+dd if=/dev/zero of=xv6.img count=10000
+dd if=kernel/bootblock of=xv6.img conv=notrunc
+dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
+Ctrl+a h for help
+qemu-system-i386 -serial mon:stdio -hdb fs.img xv6.img -smp 1
+xv6...
+cpu0: starting
+init: starting sh
+$ graph
+
+---------------------------------------
+Dummy Tick 1
+pid: 3 tickets: 100 ticks: 35
+pid: 4 tickets: 300 ticks: 141
+pid: 5 tickets: 200 ticks: 78
+
+---------------------------------------
+Dummy Tick 2
+pid: 3 tickets: 100 ticks: 79
+pid: 4 tickets: 300 ticks: 260
+pid: 5 tickets: 200 ticks: 145
+
+---------------------------------------
+Dummy Tick 3
+pid: 3 tickets: 100 ticks: 124
+pid: 4 tickets: 300 ticks: 393
+pid: 5 tickets: 200 ticks: 227
+
+---------------------------------------
+Dummy Tick 4
+pid: 3 tickets: 100 ticks: 166
+pid: 4 tickets: 300 ticks: 505
+pid: 5 tickets: 200 ticks: 302
+
+---------------------------------------
+Dummy Tick 5
+pid: 3 tickets: 100 ticks: 198
+pid: 4 tickets: 300 ticks: 584
+pid: 5 tickets: 200 ticks: 374
+
+---------------------------------------
+Dummy Tick 6
+pid: 3 tickets: 100 ticks: 231
+pid: 4 tickets: 300 ticks: 694
+pid: 5 tickets: 200 ticks: 448
+
+---------------------------------------
+Dummy Tick 7
+pid: 3 tickets: 100 ticks: 263
+pid: 4 tickets: 300 ticks: 781
+pid: 5 tickets: 200 ticks: 527
+
+---------------------------------------
+Dummy Tick 8
+pid: 3 tickets: 100 ticks: 298
+pid: 4 tickets: 300 ticks: 901
+pid: 5 tickets: 200 ticks: 611
+
+---------------------------------------
+Dummy Tick 9
+pid: 3 tickets: 100 ticks: 331
+pid: 4 tickets: 300 ticks: 1007
+pid: 5 tickets: 200 ticks: 685
+
+---------------------------------------
+Dummy Tick 10
+pid: 3 tickets: 100 ticks: 370
+pid: 4 tickets: 300 ticks: 1107
+pid: 5 tickets: 200 ticks: 742
+
+---------------------------------------
+Dummy Tick 11
+pid: 3 tickets: 100 ticks: 404
+pid: 4 tickets: 300 ticks: 1183
+pid: 5 tickets: 200 ticks: 804
+
+---------------------------------------
+Dummy Tick 12
+pid: 3 tickets: 100 ticks: 438
+pid: 4 tickets: 300 ticks: 1249
+pid: 5 tickets: 200 ticks: 854
+
+---------------------------------------
+Dummy Tick 13
+pid: 3 tickets: 100 ticks: 469
+pid: 4 tickets: 300 ticks: 1372
+pid: 5 tickets: 200 ticks: 938
+
+---------------------------------------
+Dummy Tick 14
+pid: 3 tickets: 100 ticks: 501
+pid: 4 tickets: 300 ticks: 1446
+pid: 5 tickets: 200 ticks: 1000
+
+---------------------------------------
+Dummy Tick 15
+pid: 3 tickets: 100 ticks: 534
+pid: 4 tickets: 300 ticks: 1568
+pid: 5 tickets: 200 ticks: 1079
+
+---------------------------------------
+Dummy Tick 16
+pid: 3 tickets: 100 ticks: 570
+pid: 4 tickets: 300 ticks: 1674
+pid: 5 tickets: 200 ticks: 1152
+
+---------------------------------------
+Dummy Tick 17
+pid: 3 tickets: 100 ticks: 604
+pid: 4 tickets: 300 ticks: 1804
+pid: 5 tickets: 200 ticks: 1232
+
+---------------------------------------
+Dummy Tick 18
+pid: 3 tickets: 100 ticks: 637
+pid: 4 tickets: 300 ticks: 1894
+pid: 5 tickets: 200 ticks: 1317
+
+---------------------------------------
+Dummy Tick 19
+pid: 3 tickets: 100 ticks: 674
+pid: 4 tickets: 300 ticks: 1985
+pid: 5 tickets: 200 ticks: 1378
+
+---------------------------------------
+Dummy Tick 20
+pid: 3 tickets: 100 ticks: 704
+pid: 4 tickets: 300 ticks: 2074
+pid: 5 tickets: 200 ticks: 1456
+
+---------------------------------------
+Dummy Tick 21
+pid: 3 tickets: 100 ticks: 734
+pid: 4 tickets: 300 ticks: 2151
+pid: 5 tickets: 200 ticks: 1508
+
+---------------------------------------
+Dummy Tick 22
+pid: 3 tickets: 100 ticks: 764
+pid: 4 tickets: 300 ticks: 2256
+pid: 5 tickets: 200 ticks: 1564
+
+---------------------------------------
+Dummy Tick 23
+pid: 3 tickets: 100 ticks: 799
+pid: 4 tickets: 300 ticks: 2396
+pid: 5 tickets: 200 ticks: 1660
+
+---------------------------------------
+Dummy Tick 24
+pid: 3 tickets: 100 ticks: 833
+pid: 4 tickets: 300 ticks: 2549
+pid: 5 tickets: 200 ticks: 1751
+
+---------------------------------------
+Dummy Tick 25
+pid: 3 tickets: 100 ticks: 868
+pid: 4 tickets: 300 ticks: 2633
+pid: 5 tickets: 200 ticks: 1809
+
+---------------------------------------
+Dummy Tick 26
+pid: 3 tickets: 100 ticks: 898
+pid: 4 tickets: 300 ticks: 2703
+pid: 5 tickets: 200 ticks: 1851
+
+---------------------------------------
+Dummy Tick 27
+pid: 3 tickets: 100 ticks: 929
+pid: 4 tickets: 300 ticks: 2800
+pid: 5 tickets: 200 ticks: 1927
+
+---------------------------------------
+Dummy Tick 28
+pid: 3 tickets: 100 ticks: 962
+pid: 4 tickets: 300 ticks: 2918
+pid: 5 tickets: 200 ticks: 2016
+
+---------------------------------------
+Dummy Tick 29
+pid: 3 tickets: 100 ticks: 994
+pid: 4 tickets: 300 ticks: 2992
+pid: 5 tickets: 200 ticks: 2058
+
+---------------------------------------
+Dummy Tick 30
+pid: 3 tickets: 100 ticks: 1026
+pid: 4 tickets: 300 ticks: 3098
+pid: 5 tickets: 200 ticks: 2122
+
+---------------------------------------
+Dummy Tick 31
+pid: 3 tickets: 100 ticks: 1057
+pid: 4 tickets: 300 ticks: 3190
+pid: 5 tickets: 200 ticks: 2182
+
+---------------------------------------
+Dummy Tick 32
+pid: 3 tickets: 100 ticks: 1088
+pid: 4 tickets: 300 ticks: 3275
+pid: 5 tickets: 200 ticks: 2223
+
+---------------------------------------
+Dummy Tick 33
+pid: 3 tickets: 100 ticks: 1120
+pid: 4 tickets: 300 ticks: 3366
+pid: 5 tickets: 200 ticks: 2278
+
+---------------------------------------
+Dummy Tick 34
+pid: 3 tickets: 100 ticks: 1150
+pid: 4 tickets: 300 ticks: 3463
+pid: 5 tickets: 200 ticks: 2341
+
+---------------------------------------
+Dummy Tick 35
+pid: 3 tickets: 100 ticks: 1181
+pid: 4 tickets: 300 ticks: 3547
+pid: 5 tickets: 200 ticks: 2398
+
+---------------------------------------
+Dummy Tick 36
+pid: 3 tickets: 100 ticks: 1211
+pid: 4 tickets: 300 ticks: 3626
+pid: 5 tickets: 200 ticks: 2450
+
+---------------------------------------
+Dummy Tick 37
+pid: 3 tickets: 100 ticks: 1241
+pid: 4 tickets: 300 ticks: 3720
+pid: 5 tickets: 200 ticks: 2523
+
+---------------------------------------
+Dummy Tick 38
+pid: 3 tickets: 100 ticks: 1271
+pid: 4 tickets: 300 ticks: 3829
+pid: 5 tickets: 200 ticks: 2592
+
+---------------------------------------
+Dummy Tick 39
+pid: 3 tickets: 100 ticks: 1300
+pid: 4 tickets: 300 ticks: 3921
+pid: 5 tickets: 200 ticks: 2665
+
+---------------------------------------
+Dummy Tick 40
+pid: 3 tickets: 100 ticks: 1330
+pid: 4 tickets: 300 ticks: 4014
+pid: 5 tickets: 200 ticks: 2726
+
+---------------------------------------
+Dummy Tick 41
+pid: 3 tickets: 100 ticks: 1360
+pid: 4 tickets: 300 ticks: 4131
+pid: 5 tickets: 200 ticks: 2801
+
+---------------------------------------
+Dummy Tick 42
+pid: 3 tickets: 100 ticks: 1392
+pid: 4 tickets: 300 ticks: 4196
+pid: 5 tickets: 200 ticks: 2852
+
+---------------------------------------
+Dummy Tick 43
+pid: 3 tickets: 100 ticks: 1421
+pid: 4 tickets: 300 ticks: 4318
+pid: 5 tickets: 200 ticks: 2929
+
+---------------------------------------
+Dummy Tick 44
+pid: 3 tickets: 100 ticks: 1452
+pid: 4 tickets: 300 ticks: 4415
+pid: 5 tickets: 200 ticks: 2997
+
+---------------------------------------
+Dummy Tick 45
+pid: 3 tickets: 100 ticks: 1482
+pid: 4 tickets: 300 ticks: 4481
+pid: 5 tickets: 200 ticks: 3045
+
+---------------------------------------
+Dummy Tick 46
+pid: 3 tickets: 100 ticks: 1512
+pid: 4 tickets: 300 ticks: 4572
+pid: 5 tickets: 200 ticks: 3104
+
+---------------------------------------
+Dummy Tick 47
+pid: 3 tickets: 100 ticks: 1543
+pid: 4 tickets: 300 ticks: 4662
+pid: 5 tickets: 200 ticks: 3151
+
+---------------------------------------
+Dummy Tick 48
+pid: 3 tickets: 100 ticks: 1574
+pid: 4 tickets: 300 ticks: 4754
+pid: 5 tickets: 200 ticks: 3203
+
+---------------------------------------
+Dummy Tick 49
+pid: 3 tickets: 100 ticks: 1605
+pid: 4 tickets: 300 ticks: 4858
+pid: 5 tickets: 200 ticks: 3266
+
+---------------------------------------
+Dummy Tick 50
+pid: 3 tickets: 100 ticks: 1637
+pid: 4 tickets: 300 ticks: 4957
+pid: 5 tickets: 200 ticks: 3339
+
+---------------------------------------
+Dummy Tick 51
+pid: 3 tickets: 100 ticks: 1668
+pid: 4 tickets: 300 ticks: 5057
+pid: 5 tickets: 200 ticks: 3399
+
+---------------------------------------
+Dummy Tick 52
+pid: 3 tickets: 100 ticks: 1699
+pid: 4 tickets: 300 ticks: 5110
+pid: 5 tickets: 200 ticks: 3444
+
+---------------------------------------
+Dummy Tick 53
+pid: 3 tickets: 100 ticks: 1733
+pid: 4 tickets: 300 ticks: 5192
+pid: 5 tickets: 200 ticks: 3508
+
+---------------------------------------
+Dummy Tick 54
+pid: 3 tickets: 100 ticks: 1765
+pid: 4 tickets: 300 ticks: 5266
+pid: 5 tickets: 200 ticks: 3551
+
+---------------------------------------
+Dummy Tick 55
+pid: 3 tickets: 100 ticks: 1801
+pid: 4 tickets: 300 ticks: 5362
+pid: 5 tickets: 200 ticks: 3613
+
+---------------------------------------
+Dummy Tick 56
+pid: 3 tickets: 100 ticks: 1835
+pid: 4 tickets: 300 ticks: 5469
+pid: 5 tickets: 200 ticks: 3699
+
+---------------------------------------
+Dummy Tick 57
+pid: 3 tickets: 100 ticks: 1876
+pid: 4 tickets: 300 ticks: 5605
+pid: 5 tickets: 200 ticks: 3777
+
+---------------------------------------
+Dummy Tick 58
+pid: 3 tickets: 100 ticks: 1912
+pid: 4 tickets: 300 ticks: 5702
+pid: 5 tickets: 200 ticks: 3841
+
+---------------------------------------
+Dummy Tick 59
+pid: 3 tickets: 100 ticks: 1950
+pid: 4 tickets: 300 ticks: 5784
+pid: 5 tickets: 200 ticks: 3891
+
+---------------------------------------
+Dummy Tick 60
+pid: 3 tickets: 100 ticks: 1987
+pid: 4 tickets: 300 ticks: 5916
+pid: 5 tickets: 200 ticks: 3977
+
+---------------------------------------
+Dummy Tick 61
+pid: 3 tickets: 100 ticks: 2022
+pid: 4 tickets: 300 ticks: 6031
+pid: 5 tickets: 200 ticks: 4051
+
+---------------------------------------
+Dummy Tick 62
+pid: 3 tickets: 100 ticks: 2055
+pid: 4 tickets: 300 ticks: 6140
+pid: 5 tickets: 200 ticks: 4113
+
+---------------------------------------
+Dummy Tick 63
+pid: 3 tickets: 100 ticks: 2086
+pid: 4 tickets: 300 ticks: 6208
+pid: 5 tickets: 200 ticks: 4160
+
+---------------------------------------
+Dummy Tick 64
+pid: 3 tickets: 100 ticks: 2118
+pid: 4 tickets: 300 ticks: 6301
+pid: 5 tickets: 200 ticks: 4226
+
+---------------------------------------
+Dummy Tick 65
+pid: 3 tickets: 100 ticks: 2150
+pid: 4 tickets: 300 ticks: 6417
+pid: 5 tickets: 200 ticks: 4281
+
+---------------------------------------
+Dummy Tick 66
+pid: 3 tickets: 100 ticks: 2180
+pid: 4 tickets: 300 ticks: 6481
+pid: 5 tickets: 200 ticks: 4330
+
+---------------------------------------
+Dummy Tick 67
+pid: 3 tickets: 100 ticks: 2210
+pid: 4 tickets: 300 ticks: 6557
+pid: 5 tickets: 200 ticks: 4372
+
+---------------------------------------
+Dummy Tick 68
+pid: 3 tickets: 100 ticks: 2240
+pid: 4 tickets: 300 ticks: 6708
+pid: 5 tickets: 200 ticks: 4473
+
+---------------------------------------
+Dummy Tick 69
+pid: 3 tickets: 100 ticks: 2270
+pid: 4 tickets: 300 ticks: 6787
+pid: 5 tickets: 200 ticks: 4540
+
+---------------------------------------
+Dummy Tick 70
+pid: 3 tickets: 100 ticks: 2300
+pid: 4 tickets: 300 ticks: 6849
+pid: 5 tickets: 200 ticks: 4581
+
+---------------------------------------
+Dummy Tick 71
+pid: 3 tickets: 100 ticks: 2331
+pid: 4 tickets: 300 ticks: 6941
+pid: 5 tickets: 200 ticks: 4617
+
+---------------------------------------
+Dummy Tick 72
+pid: 3 tickets: 100 ticks: 2360
+pid: 4 tickets: 300 ticks: 7046
+pid: 5 tickets: 200 ticks: 4679
+
+---------------------------------------
+Dummy Tick 73
+pid: 3 tickets: 100 ticks: 2391
+pid: 4 tickets: 300 ticks: 7124
+pid: 5 tickets: 200 ticks: 4749
+
+---------------------------------------
+Dummy Tick 74
+pid: 3 tickets: 100 ticks: 2423
+pid: 4 tickets: 300 ticks: 7219
+pid: 5 tickets: 200 ticks: 4797
+
+---------------------------------------
+Dummy Tick 75
+pid: 3 tickets: 100 ticks: 2457
+pid: 4 tickets: 300 ticks: 7333
+pid: 5 tickets: 200 ticks: 4861
+
+---------------------------------------
+Dummy Tick 76
+pid: 3 tickets: 100 ticks: 2490
+pid: 4 tickets: 300 ticks: 7421
+pid: 5 tickets: 200 ticks: 4926
+
+---------------------------------------
+Dummy Tick 77
+pid: 3 tickets: 100 ticks: 2522
+pid: 4 tickets: 300 ticks: 7529
+pid: 5 tickets: 200 ticks: 4993
+
+---------------------------------------
+Dummy Tick 78
+pid: 3 tickets: 100 ticks: 2552
+pid: 4 tickets: 300 ticks: 7589
+pid: 5 tickets: 200 ticks: 5052
+
+---------------------------------------
+Dummy Tick 79
+pid: 3 tickets: 100 ticks: 2582
+pid: 4 tickets: 300 ticks: 7669
+pid: 5 tickets: 200 ticks: 5117
+
+---------------------------------------
+Dummy Tick 80
+pid: 3 tickets: 100 ticks: 2611
+pid: 4 tickets: 300 ticks: 7743
+pid: 5 tickets: 200 ticks: 5163
+
+---------------------------------------
+Dummy Tick 81
+pid: 3 tickets: 100 ticks: 2642
+pid: 4 tickets: 300 ticks: 7840
+pid: 5 tickets: 200 ticks: 5233
+
+---------------------------------------
+Dummy Tick 82
+pid: 3 tickets: 100 ticks: 2672
+pid: 4 tickets: 300 ticks: 7936
+pid: 5 tickets: 200 ticks: 5295
+
+---------------------------------------
+Dummy Tick 83
+pid: 3 tickets: 100 ticks: 2704
+pid: 4 tickets: 300 ticks: 8078
+pid: 5 tickets: 200 ticks: 5363
+
+---------------------------------------
+Dummy Tick 84
+pid: 3 tickets: 100 ticks: 2734
+pid: 4 tickets: 300 ticks: 8149
+pid: 5 tickets: 200 ticks: 5423
+
+---------------------------------------
+Dummy Tick 85
+pid: 3 tickets: 100 ticks: 2764
+pid: 4 tickets: 300 ticks: 8240
+pid: 5 tickets: 200 ticks: 5490
+
+---------------------------------------
+Dummy Tick 86
+pid: 3 tickets: 100 ticks: 2796
+pid: 4 tickets: 300 ticks: 8339
+pid: 5 tickets: 200 ticks: 5561
+
+---------------------------------------
+Dummy Tick 87
+pid: 3 tickets: 100 ticks: 2827
+pid: 4 tickets: 300 ticks: 8435
+pid: 5 tickets: 200 ticks: 5635
+
+---------------------------------------
+Dummy Tick 88
+pid: 3 tickets: 100 ticks: 2857
+pid: 4 tickets: 300 ticks: 8506
+pid: 5 tickets: 200 ticks: 5682
+
+---------------------------------------
+Dummy Tick 89
+pid: 3 tickets: 100 ticks: 2888
+pid: 4 tickets: 300 ticks: 8607
+pid: 5 tickets: 200 ticks: 5731
+
+---------------------------------------
+Dummy Tick 90
+pid: 3 tickets: 100 ticks: 2922
+pid: 4 tickets: 300 ticks: 8711
+pid: 5 tickets: 200 ticks: 5786
+
+---------------------------------------
+Dummy Tick 91
+pid: 3 tickets: 100 ticks: 2955
+pid: 4 tickets: 300 ticks: 8820
+pid: 5 tickets: 200 ticks: 5858
+
+---------------------------------------
+Dummy Tick 92
+pid: 3 tickets: 100 ticks: 2987
+pid: 4 tickets: 300 ticks: 8913
+pid: 5 tickets: 200 ticks: 5909
+
+---------------------------------------
+Dummy Tick 93
+pid: 3 tickets: 100 ticks: 3022
+pid: 4 tickets: 300 ticks: 9025
+pid: 5 tickets: 200 ticks: 5983
+
+---------------------------------------
+Dummy Tick 94
+pid: 3 tickets: 100 ticks: 3054
+pid: 4 tickets: 300 ticks: 9133
+pid: 5 tickets: 200 ticks: 6065
+
+---------------------------------------
+Dummy Tick 95
+pid: 3 tickets: 100 ticks: 3085
+pid: 4 tickets: 300 ticks: 9212
+pid: 5 tickets: 200 ticks: 6116
+
+---------------------------------------
+Dummy Tick 96
+pid: 3 tickets: 100 ticks: 3120
+pid: 4 tickets: 300 ticks: 9274
+pid: 5 tickets: 200 ticks: 6160
+
+---------------------------------------
+Dummy Tick 97
+pid: 3 tickets: 100 ticks: 3156
+pid: 4 tickets: 300 ticks: 9357
+pid: 5 tickets: 200 ticks: 6225
+
+---------------------------------------
+Dummy Tick 98
+pid: 3 tickets: 100 ticks: 3190
+pid: 4 tickets: 300 ticks: 9475
+pid: 5 tickets: 200 ticks: 6293
+
+---------------------------------------
+Dummy Tick 99
+pid: 3 tickets: 100 ticks: 3226
+pid: 4 tickets: 300 ticks: 9585
+pid: 5 tickets: 200 ticks: 6381
+
+---------------------------------------
+Dummy Tick 100
+pid: 3 tickets: 100 ticks: 3261
+pid: 4 tickets: 300 ticks: 9732
+pid: 5 tickets: 200 ticks: 6462
+
+---------------------------------------
+Dummy Tick 101
+pid: 3 tickets: 100 ticks: 3313
+pid: 4 tickets: 300 ticks: 9884
+pid: 5 tickets: 200 ticks: 6559
+
+---------------------------------------
+Dummy Tick 102
+pid: 3 tickets: 100 ticks: 3359
+pid: 4 tickets: 300 ticks: 10033
+pid: 5 tickets: 200 ticks: 6667
+
+---------------------------------------
+Dummy Tick 103
+pid: 3 tickets: 100 ticks: 3406
+pid: 4 tickets: 300 ticks: 10180
+pid: 5 tickets: 200 ticks: 6777
+
+---------------------------------------
+Dummy Tick 104
+pid: 3 tickets: 100 ticks: 3440
+pid: 4 tickets: 300 ticks: 10275
+pid: 5 tickets: 200 ticks: 6846
+
+---------------------------------------
+Dummy Tick 105
+pid: 3 tickets: 100 ticks: 3474
+pid: 4 tickets: 300 ticks: 10382
+pid: 5 tickets: 200 ticks: 6933
+
+---------------------------------------
+Dummy Tick 106
+pid: 3 tickets: 100 ticks: 3507
+pid: 4 tickets: 300 ticks: 10478
+pid: 5 tickets: 200 ticks: 6997
+
+---------------------------------------
+Dummy Tick 107
+pid: 3 tickets: 100 ticks: 3541
+pid: 4 tickets: 300 ticks: 10598
+pid: 5 tickets: 200 ticks: 7084
+
+---------------------------------------
+Dummy Tick 108
+pid: 3 tickets: 100 ticks: 3573
+pid: 4 tickets: 300 ticks: 10662
+pid: 5 tickets: 200 ticks: 7131
+
+---------------------------------------
+Dummy Tick 109
+pid: 3 tickets: 100 ticks: 3605
+pid: 4 tickets: 300 ticks: 10762
+pid: 5 tickets: 200 ticks: 7182
+
+---------------------------------------
+Dummy Tick 110
+pid: 3 tickets: 100 ticks: 3639
+pid: 4 tickets: 300 ticks: 10850
+pid: 5 tickets: 200 ticks: 7235
+
+---------------------------------------
+Dummy Tick 111
+pid: 3 tickets: 100 ticks: 3671
+pid: 4 tickets: 300 ticks: 10928
+pid: 5 tickets: 200 ticks: 7295
+
+---------------------------------------
+Dummy Tick 112
+pid: 3 tickets: 100 ticks: 3707
+pid: 4 tickets: 300 ticks: 11036
+pid: 5 tickets: 200 ticks: 7383
+
+---------------------------------------
+Dummy Tick 113
+pid: 3 tickets: 100 ticks: 3747
+pid: 4 tickets: 300 ticks: 11145
+pid: 5 tickets: 200 ticks: 7443
+
+---------------------------------------
+Dummy Tick 114
+pid: 3 tickets: 100 ticks: 3794
+pid: 4 tickets: 300 ticks: 11312
+pid: 5 tickets: 200 ticks: 7547
+
+---------------------------------------
+Dummy Tick 115
+pid: 3 tickets: 100 ticks: 3835
+pid: 4 tickets: 300 ticks: 11488
+pid: 5 tickets: 200 ticks: 7665
+
+---------------------------------------
+Dummy Tick 116
+pid: 3 tickets: 100 ticks: 3873
+pid: 4 tickets: 300 ticks: 11574
+pid: 5 tickets: 200 ticks: 7721
+
+---------------------------------------
+Dummy Tick 117
+pid: 3 tickets: 100 ticks: 3917
+pid: 4 tickets: 300 ticks: 11699
+pid: 5 tickets: 200 ticks: 7793
+
+---------------------------------------
+Dummy Tick 118
+pid: 3 tickets: 100 ticks: 3958
+pid: 4 tickets: 300 ticks: 11803
+pid: 5 tickets: 200 ticks: 7868
+
+---------------------------------------
+Dummy Tick 119
+pid: 3 tickets: 100 ticks: 3990
+pid: 4 tickets: 300 ticks: 11932
+pid: 5 tickets: 200 ticks: 7948
+
+---------------------------------------
+Dummy Tick 120
+pid: 3 tickets: 100 ticks: 4019
+pid: 4 tickets: 300 ticks: 12004
+pid: 5 tickets: 200 ticks: 7993
+
+---------------------------------------
+Dummy Tick 121
+pid: 3 tickets: 100 ticks: 4049
+pid: 4 tickets: 300 ticks: 12065
+pid: 5 tickets: 200 ticks: 8040
+
+---------------------------------------
+Dummy Tick 122
+pid: 3 tickets: 100 ticks: 4082
+pid: 4 tickets: 300 ticks: 12152
+pid: 5 tickets: 200 ticks: 8082
+
+---------------------------------------
+Dummy Tick 123
+pid: 3 tickets: 100 ticks: 4115
+pid: 4 tickets: 300 ticks: 12251
+pid: 5 tickets: 200 ticks: 8154
+
+---------------------------------------
+Dummy Tick 124
+pid: 3 tickets: 100 ticks: 4146
+pid: 4 tickets: 300 ticks: 12320
+pid: 5 tickets: 200 ticks: 8210
+
+---------------------------------------
+Dummy Tick 125
+pid: 3 tickets: 100 ticks: 4179
+pid: 4 tickets: 300 ticks: 12435
+pid: 5 tickets: 200 ticks: 8305
+
+---------------------------------------
+Dummy Tick 126
+pid: 3 tickets: 100 ticks: 4211
+pid: 4 tickets: 300 ticks: 12550
+pid: 5 tickets: 200 ticks: 8378
+
+---------------------------------------
+Dummy Tick 127
+pid: 3 tickets: 100 ticks: 4241
+pid: 4 tickets: 300 ticks: 12604
+pid: 5 tickets: 200 ticks: 8437
+
+---------------------------------------
+Dummy Tick 128
+pid: 3 tickets: 100 ticks: 4271
+pid: 4 tickets: 300 ticks: 12688
+pid: 5 tickets: 200 ticks: 8480
+
+---------------------------------------
+Dummy Tick 129
+pid: 3 tickets: 100 ticks: 4302
+pid: 4 tickets: 300 ticks: 12791
+pid: 5 tickets: 200 ticks: 8578
+
+---------------------------------------
+Dummy Tick 130
+pid: 3 tickets: 100 ticks: 4332
+pid: 4 tickets: 300 ticks: 12860
+pid: 5 tickets: 200 ticks: 8626
+
+---------------------------------------
+Dummy Tick 131
+pid: 3 tickets: 100 ticks: 4362
+pid: 4 tickets: 300 ticks: 12970
+pid: 5 tickets: 200 ticks: 8704
+
+---------------------------------------
+Dummy Tick 132
+pid: 3 tickets: 100 ticks: 4392
+pid: 4 tickets: 300 ticks: 13067
+pid: 5 tickets: 200 ticks: 8776
+
+---------------------------------------
+Dummy Tick 133
+pid: 3 tickets: 100 ticks: 4423
+pid: 4 tickets: 300 ticks: 13165
+pid: 5 tickets: 200 ticks: 8839
+
+---------------------------------------
+Dummy Tick 134
+pid: 3 tickets: 100 ticks: 4454
+pid: 4 tickets: 300 ticks: 13254
+pid: 5 tickets: 200 ticks: 8933
+
+---------------------------------------
+Dummy Tick 135
+pid: 3 tickets: 100 ticks: 4484
+pid: 4 tickets: 300 ticks: 13326
+pid: 5 tickets: 200 ticks: 8985
+
+---------------------------------------
+Dummy Tick 136
+pid: 3 tickets: 100 ticks: 4513
+pid: 4 tickets: 300 ticks: 13406
+pid: 5 tickets: 200 ticks: 9041
+
+---------------------------------------
+Dummy Tick 137
+pid: 3 tickets: 100 ticks: 4543
+pid: 4 tickets: 300 ticks: 13483
+pid: 5 tickets: 200 ticks: 9083
+
+---------------------------------------
+Dummy Tick 138
+pid: 3 tickets: 100 ticks: 4572
+pid: 4 tickets: 300 ticks: 13558
+pid: 5 tickets: 200 ticks: 9144
+
+---------------------------------------
+Dummy Tick 139
+pid: 3 tickets: 100 ticks: 4602
+pid: 4 tickets: 300 ticks: 13621
+pid: 5 tickets: 200 ticks: 9197
+
+---------------------------------------
+Dummy Tick 140
+pid: 3 tickets: 100 ticks: 4632
+pid: 4 tickets: 300 ticks: 13714
+pid: 5 tickets: 200 ticks: 9256
+
+---------------------------------------
+Dummy Tick 141
+pid: 3 tickets: 100 ticks: 4662
+pid: 4 tickets: 300 ticks: 13810
+pid: 5 tickets: 200 ticks: 9305
+
+---------------------------------------
+Dummy Tick 142
+pid: 3 tickets: 100 ticks: 4691
+pid: 4 tickets: 300 ticks: 13908
+pid: 5 tickets: 200 ticks: 9363
+
+---------------------------------------
+Dummy Tick 143
+pid: 3 tickets: 100 ticks: 4721
+pid: 4 tickets: 300 ticks: 13985
+pid: 5 tickets: 200 ticks: 9410
+
+---------------------------------------
+Dummy Tick 144
+pid: 3 tickets: 100 ticks: 4750
+pid: 4 tickets: 300 ticks: 14026
+pid: 5 tickets: 200 ticks: 9457
+
+---------------------------------------
+Dummy Tick 145
+pid: 3 tickets: 100 ticks: 4782
+pid: 4 tickets: 300 ticks: 14093
+pid: 5 tickets: 200 ticks: 9511
+
+---------------------------------------
+Dummy Tick 146
+pid: 3 tickets: 100 ticks: 4813
+pid: 4 tickets: 300 ticks: 14178
+pid: 5 tickets: 200 ticks: 9575
+
+---------------------------------------
+Dummy Tick 147
+pid: 3 tickets: 100 ticks: 4845
+pid: 4 tickets: 300 ticks: 14269
+pid: 5 tickets: 200 ticks: 9632
+
+---------------------------------------
+Dummy Tick 148
+pid: 3 tickets: 100 ticks: 4875
+pid: 4 tickets: 300 ticks: 14349
+pid: 5 tickets: 200 ticks: 9688
+
+---------------------------------------
+Dummy Tick 149
+pid: 3 tickets: 100 ticks: 4905
+pid: 4 tickets: 300 ticks: 14446
+pid: 5 tickets: 200 ticks: 9757
+
+---------------------------------------
+Dummy Tick 150
+pid: 3 tickets: 100 ticks: 4935
+pid: 4 tickets: 300 ticks: 14534
+pid: 5 tickets: 200 ticks: 9811
+
+---------------------------------------
+Dummy Tick 151
+pid: 3 tickets: 100 ticks: 4965
+pid: 4 tickets: 300 ticks: 14622
+pid: 5 tickets: 200 ticks: 9855
+
+---------------------------------------
+Dummy Tick 152
+pid: 3 tickets: 100 ticks: 4995
+pid: 4 tickets: 300 ticks: 14693
+pid: 5 tickets: 200 ticks: 9899
+
+---------------------------------------
+Dummy Tick 153
+pid: 3 tickets: 100 ticks: 5024
+pid: 4 tickets: 300 ticks: 14790
+pid: 5 tickets: 200 ticks: 9958
+
+---------------------------------------
+Dummy Tick 154
+pid: 3 tickets: 100 ticks: 5054
+pid: 4 tickets: 300 ticks: 14865
+pid: 5 tickets: 200 ticks: 10002
+
+---------------------------------------
+Dummy Tick 155
+pid: 3 tickets: 100 ticks: 5083
+pid: 4 tickets: 300 ticks: 14972
+pid: 5 tickets: 200 ticks: 10074
+
+---------------------------------------
+Dummy Tick 156
+pid: 3 tickets: 100 ticks: 5113
+pid: 4 tickets: 300 ticks: 15056
+pid: 5 tickets: 200 ticks: 10118
+
+---------------------------------------
+Dummy Tick 157
+pid: 3 tickets: 100 ticks: 5143
+pid: 4 tickets: 300 ticks: 15156
+pid: 5 tickets: 200 ticks: 10178
+
+---------------------------------------
+Dummy Tick 158
+pid: 3 tickets: 100 ticks: 5172
+pid: 4 tickets: 300 ticks: 15271
+pid: 5 tickets: 200 ticks: 10243
+
+---------------------------------------
+Dummy Tick 159
+pid: 3 tickets: 100 ticks: 5203
+pid: 4 tickets: 300 ticks: 15360
+pid: 5 tickets: 200 ticks: 10304
+
+---------------------------------------
+Dummy Tick 160
+pid: 3 tickets: 100 ticks: 5233
+pid: 4 tickets: 300 ticks: 15457
+pid: 5 tickets: 200 ticks: 10386
+
+---------------------------------------
+Dummy Tick 161
+pid: 3 tickets: 100 ticks: 5263
+pid: 4 tickets: 300 ticks: 15598
+pid: 5 tickets: 200 ticks: 10479
+
+---------------------------------------
+Dummy Tick 162
+pid: 3 tickets: 100 ticks: 5292
+pid: 4 tickets: 300 ticks: 15697
+pid: 5 tickets: 200 ticks: 10539
+
+---------------------------------------
+Dummy Tick 163
+pid: 3 tickets: 100 ticks: 5323
+pid: 4 tickets: 300 ticks: 15816
+pid: 5 tickets: 200 ticks: 10609
+
+---------------------------------------
+Dummy Tick 164
+pid: 3 tickets: 100 ticks: 5352
+pid: 4 tickets: 300 ticks: 15906
+pid: 5 tickets: 200 ticks: 10676
+
+---------------------------------------
+Dummy Tick 165
+pid: 3 tickets: 100 ticks: 5383
+pid: 4 tickets: 300 ticks: 16010
+pid: 5 tickets: 200 ticks: 10729
+
+---------------------------------------
+Dummy Tick 166
+pid: 3 tickets: 100 ticks: 5412
+pid: 4 tickets: 300 ticks: 16095
+pid: 5 tickets: 200 ticks: 10774
+
+---------------------------------------
+Dummy Tick 167
+pid: 3 tickets: 100 ticks: 5444
+pid: 4 tickets: 300 ticks: 16166
+pid: 5 tickets: 200 ticks: 10827
+
+---------------------------------------
+Dummy Tick 168
+pid: 3 tickets: 100 ticks: 5475
+pid: 4 tickets: 300 ticks: 16265
+pid: 5 tickets: 200 ticks: 10891
+
+---------------------------------------
+Dummy Tick 169
+pid: 3 tickets: 100 ticks: 5507
+pid: 4 tickets: 300 ticks: 16353
+pid: 5 tickets: 200 ticks: 10957
+
+---------------------------------------
+Dummy Tick 170
+pid: 3 tickets: 100 ticks: 5538
+pid: 4 tickets: 300 ticks: 16452
+pid: 5 tickets: 200 ticks: 11027
+
+---------------------------------------
+Dummy Tick 171
+pid: 3 tickets: 100 ticks: 5572
+pid: 4 tickets: 300 ticks: 16544
+pid: 5 tickets: 200 ticks: 11091
+
+---------------------------------------
+Dummy Tick 172
+pid: 3 tickets: 100 ticks: 5604
+pid: 4 tickets: 300 ticks: 16618
+pid: 5 tickets: 200 ticks: 11150
+
+---------------------------------------
+Dummy Tick 173
+pid: 3 tickets: 100 ticks: 5635
+pid: 4 tickets: 300 ticks: 16703
+pid: 5 tickets: 200 ticks: 11204
+
+---------------------------------------
+Dummy Tick 174
+pid: 3 tickets: 100 ticks: 5665
+pid: 4 tickets: 300 ticks: 16829
+pid: 5 tickets: 200 ticks: 11278
+
+---------------------------------------
+Dummy Tick 175
+pid: 3 tickets: 100 ticks: 5695
+pid: 4 tickets: 300 ticks: 16944
+pid: 5 tickets: 200 ticks: 11357
+
+---------------------------------------
+Dummy Tick 176
+pid: 3 tickets: 100 ticks: 5726
+pid: 4 tickets: 300 ticks: 17076
+pid: 5 tickets: 200 ticks: 11425
+
+---------------------------------------
+Dummy Tick 177
+pid: 3 tickets: 100 ticks: 5756
+pid: 4 tickets: 300 ticks: 17137
+pid: 5 tickets: 200 ticks: 11485
+
+---------------------------------------
+Dummy Tick 178
+pid: 3 tickets: 100 ticks: 5786
+pid: 4 tickets: 300 ticks: 17249
+pid: 5 tickets: 200 ticks: 11553
+
+---------------------------------------
+Dummy Tick 179
+pid: 3 tickets: 100 ticks: 5816
+pid: 4 tickets: 300 ticks: 17330
+pid: 5 tickets: 200 ticks: 11605
+
+---------------------------------------
+Dummy Tick 180
+pid: 3 tickets: 100 ticks: 5845
+pid: 4 tickets: 300 ticks: 17385
+pid: 5 tickets: 200 ticks: 11650
+
+---------------------------------------
+Dummy Tick 181
+pid: 3 tickets: 100 ticks: 5875
+pid: 4 tickets: 300 ticks: 17474
+pid: 5 tickets: 200 ticks: 11709
+
+---------------------------------------
+Dummy Tick 182
+pid: 3 tickets: 100 ticks: 5905
+pid: 4 tickets: 300 ticks: 17575
+pid: 5 tickets: 200 ticks: 11786
+
+---------------------------------------
+Dummy Tick 183
+pid: 3 tickets: 100 ticks: 5934
+pid: 4 tickets: 300 ticks: 17649
+pid: 5 tickets: 200 ticks: 11836
+
+---------------------------------------
+Dummy Tick 184
+pid: 3 tickets: 100 ticks: 5964
+pid: 4 tickets: 300 ticks: 17737
+pid: 5 tickets: 200 ticks: 11885
+
+---------------------------------------
+Dummy Tick 185
+pid: 3 tickets: 100 ticks: 5994
+pid: 4 tickets: 300 ticks: 17806
+pid: 5 tickets: 200 ticks: 11943
+
+---------------------------------------
+Dummy Tick 186
+pid: 3 tickets: 100 ticks: 6024
+pid: 4 tickets: 300 ticks: 17895
+pid: 5 tickets: 200 ticks: 11999
+
+---------------------------------------
+Dummy Tick 187
+pid: 3 tickets: 100 ticks: 6054
+pid: 4 tickets: 300 ticks: 18004
+pid: 5 tickets: 200 ticks: 12064
+
+---------------------------------------
+Dummy Tick 188
+pid: 3 tickets: 100 ticks: 6083
+pid: 4 tickets: 300 ticks: 18086
+pid: 5 tickets: 200 ticks: 12124
+
+---------------------------------------
+Dummy Tick 189
+pid: 3 tickets: 100 ticks: 6113
+pid: 4 tickets: 300 ticks: 18197
+pid: 5 tickets: 200 ticks: 12199
+
+---------------------------------------
+Dummy Tick 190
+pid: 3 tickets: 100 ticks: 6144
+pid: 4 tickets: 300 ticks: 18259
+pid: 5 tickets: 200 ticks: 12246
+
+---------------------------------------
+Dummy Tick 191
+pid: 3 tickets: 100 ticks: 6175
+pid: 4 tickets: 300 ticks: 18346
+pid: 5 tickets: 200 ticks: 12309
+
+---------------------------------------
+Dummy Tick 192
+pid: 3 tickets: 100 ticks: 6204
+pid: 4 tickets: 300 ticks: 18415
+pid: 5 tickets: 200 ticks: 12348
+
+---------------------------------------
+Dummy Tick 193
+pid: 3 tickets: 100 ticks: 6235
+pid: 4 tickets: 300 ticks: 18477
+pid: 5 tickets: 200 ticks: 12391
+
+---------------------------------------
+Dummy Tick 194
+pid: 3 tickets: 100 ticks: 6265
+pid: 4 tickets: 300 ticks: 18551
+pid: 5 tickets: 200 ticks: 12442
+
+---------------------------------------
+Dummy Tick 195
+pid: 3 tickets: 100 ticks: 6294
+pid: 4 tickets: 300 ticks: 18661
+pid: 5 tickets: 200 ticks: 12517
+
+---------------------------------------
+Dummy Tick 196
+pid: 3 tickets: 100 ticks: 6324
+pid: 4 tickets: 300 ticks: 18744
+pid: 5 tickets: 200 ticks: 12582
+
+---------------------------------------
+Dummy Tick 197
+pid: 3 tickets: 100 ticks: 6355
+pid: 4 tickets: 300 ticks: 18838
+pid: 5 tickets: 200 ticks: 12633
+
+---------------------------------------
+Dummy Tick 198
+pid: 3 tickets: 100 ticks: 6385
+pid: 4 tickets: 300 ticks: 18937
+pid: 5 tickets: 200 ticks: 12674
+
+---------------------------------------
+Dummy Tick 199
+pid: 3 tickets: 100 ticks: 6414
+pid: 4 tickets: 300 ticks: 19017
+pid: 5 tickets: 200 ticks: 12725
+
+---------------------------------------
+Dummy Tick 200
+pid: 3 tickets: 100 ticks: 6444
+pid: 4 tickets: 300 ticks: 19114
+pid: 5 tickets: 200 ticks: 12774
+
+---------------------------------------
+Dummy Tick 201
+pid: 3 tickets: 100 ticks: 6474
+pid: 4 tickets: 300 ticks: 19210
+pid: 5 tickets: 200 ticks: 12826
+
+---------------------------------------
+Dummy Tick 202
+pid: 3 tickets: 100 ticks: 6504
+pid: 4 tickets: 300 ticks: 19290
+pid: 5 tickets: 200 ticks: 12872
+rm user/bin/ls user/bin/grep user/bin/stress_manylow user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/setticket user/bin/random user/bin/init user/bin/rm user/bin/default_tickets user/bin/processesinuse user/bin/forktickets user/bin/echo user/bin/high_tickets user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/graph user/bin/high_sleep user/bin/stressfs user/bin/switch_tickets user/bin/zombie user/bin/stress_equal user/bin/getpinfo
